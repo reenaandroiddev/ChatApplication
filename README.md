@@ -10,12 +10,8 @@ This application has following features
 Used single activity to handle application features
 
 1. MessageActivity - Holds the list of albums and display to the user
-3. AlbumViewMode - Mediator between domain/data layer and UI layer to hold the data which suppose to
+3. MessageViewModel - Mediator between domain/data layer and UI layer to hold the data which suppose to
    load and display on the screen
-4. Dependency Injection  - Provides the single instance dependency of Retrofit, room database
-   throughout the application. Provides the instances of ViewModel, Use cases, repositories to the
-   caller
-5. Mapper - Used to map response, models and entity in different layers and send to the UI
 
 ### Artifact
 
