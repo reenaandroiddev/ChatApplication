@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/messageHistoryFragment">
+
+    <fragment
+        android:id="@+id/messageHistoryFragment"
+        android:name="com.learn.messagingapp.ui.history.MessageHistoryFragment"
+        android:label="@string/my_friends"
+        tools:layout="@layout/fragment_message_history">
+        <action
+            android:id="@+id/action_messageHistoryFragment_to_liveMessageFragment"
+            app:destination="@id/liveMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liveMessageFragment"
+        android:name="com.learn.messagingapp.ui.livemessaging.LiveMessageFragment"
+        android:label="Conversation"
+        tools:layout="@layout/fragment_live_message" />
+</navigation>
